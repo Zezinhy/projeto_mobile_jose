@@ -18,15 +18,17 @@ function adicionarValor() {
    }
  }
 
-//function Mostrarpares(){
-  //const tabela = document.getElementyById('tabelaValores').getElementyById('tbody')[0];
+ function Mostrarpares(){
+  const tabelaPares = document.getElementyById('tabelaPares').getElementyByTagName('tbody')[0];
 
-  //for (let i = 0; i < vetor.length; i++) {
-  //const valor = valor = vetor[i];
-  //if (valor % 2 === 0){
-    //const linha = tabela.insertRow();
-    //const celula = linha.insertCell(0);
-    //celula.textContent = valor;
-// }
-//}
-//}
+  tabelaPares.innerHTML = ''; //limpa a tabela antes de adicionar novos Valores
+
+   vetor.forEach(valor =>, {
+});
+   if (valor % 2 === 0) {
+    const novalinha = tabelaPares.insertRow();
+    const celula = novalinha.insertCell(0);
+    celula.textContent = valor;
+}
+}
+  for()
