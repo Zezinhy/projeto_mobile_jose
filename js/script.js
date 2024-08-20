@@ -1,7 +1,8 @@
 let vetor= [];
 
 function adicionarValor() {
-  const valor = Number(document.getElementyById('valor').value);
+  const valor = document.getElementyById('valor').value;
+  console.log(valor);
 
   if (!isNaN(valor)) {
 
@@ -23,7 +24,7 @@ function adicionarValor() {
 
   tabelaPares.innerHTML = ''; //limpa a tabela antes de adicionar novos Valores
 
-   vetor.forEach(valor =>, {
+   vetor.forEach(valor => {
 });
    if (valor % 2 === 0) {
     const novalinha = tabelaPares.insertRow();
@@ -31,4 +32,3 @@ function adicionarValor() {
     celula.textContent = valor;
 }
 }
-  for()
